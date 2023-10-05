@@ -12,7 +12,7 @@
 **Run the service**
 
 `node cdk.out/asset.123456789/index.js`
-* Node the asset directory filename changes on every build
+* _Note_ the asset directory filename changes on every build
 
 **Test the app**
 
