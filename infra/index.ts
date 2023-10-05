@@ -13,7 +13,7 @@ class MyStack extends Stack {
     new NodejsFunction(this, 'MyFunction', {
       bundling: {
         logLevel: LogLevel.WARNING,
-        target: 'es2020',
+        target: 'node18',
         externalModules: [
           '@nestjs/microservices',
           '@nestjs/microservices/microservices-module',

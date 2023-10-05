@@ -11,6 +11,7 @@ export class AuthService {
   }
 
   test() {
+    console.log('hello')
     assert.notEqual(this.jwtService, undefined);
   }
 

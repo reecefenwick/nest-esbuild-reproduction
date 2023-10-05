@@ -25,10 +25,8 @@
     "strictPropertyInitialization": true,
     "esModuleInterop": true,
     "paths": {
-
       "@test/packages": ["./src/packages"],
       "@test/packages/*": ["./src/packages/*"],
-
     }
   },
   "exclude": [

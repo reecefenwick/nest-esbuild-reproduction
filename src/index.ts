@@ -1,13 +1,11 @@
-import {NestFactory} from "@nestjs/core";
+import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { AuthService } from './packages/auth/auth.service';
 
 const handler = async () => {
+    console.log('initialising');
     const app = await NestFactory.create(AppModule);
 
-    const authService = app.get(AuthService);
-
-    authService.test();
+    await app.listen(3000);
 }
 
 handler();

@@ -1,21 +1,13 @@
 import { Module } from '@nestjs/common';
-import { JwtModule } from '@nestjs/jwt';
-import { randomUUID } from 'crypto';
 import { AuthService } from '@test/packages/auth/auth.service';
+import { AuthModule } from '@test/packages/auth/auth.module';
+import { MyApiModule } from './api.module';
 
 @Module({
   imports: [
-    JwtModule.registerAsync({
-      useFactory: async () => {
-        return {
-          secret: randomUUID(),
-        };
-      },
-    }),
-  ],
-  providers: [
-    AuthService,
-  ],
+    AuthModule,
+    MyApiModule
+  ]
 })
 export class AppModule {
 
