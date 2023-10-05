@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -r cdk.out build",
+    "clean": "rimraf cdk.out build",
     "build": "tsc",
     "synth": "yarn clean && yarn build && cdk synth"
   },
@@ -28,6 +28,7 @@
     "constructs": "^10.2.70",
     "esbuild": "0.18.11",
     "reflect-metadata": "^0.1.13",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }

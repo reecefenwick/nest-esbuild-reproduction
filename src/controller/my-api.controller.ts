@@ -1,7 +1,7 @@
 import { Controller } from '@nestjs/common';
 import { TsRest, TsRestHandler, tsRestHandler } from '@ts-rest/nest';
 import { myApiContract } from '../api.contract';
-import { AuthService } from '@test/packages/auth/auth.service';
+import { AuthService } from '../packages/auth/auth.service';
 
 
 @Controller()
